@@ -18,3 +18,13 @@ body {
   padding: 5px;
   /* background-color:aqua; */
 }
+.snakeBody {
+  background: url("./images/body-cell.jpg");
+  background-size: cover;
+  border-radius: 50%;
+}
+.head {
+  background: url("./images/snake-head.jpg");
+  background-size: cover;
+  border-radius: 30%;
+}
