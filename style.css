@@ -36,8 +36,11 @@ body {
   margin: 0 auto;
 }
 p {
-  display: block;
+  width: 500px;
+  height: auto;
   margin: 0 auto;
+  display: block;
+  padding-top: 20px;
 }
 h2 {
   display: flex;
