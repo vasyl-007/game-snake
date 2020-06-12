@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  margin: 100px;
+  margin: 60px;
 }
 .field {
   width: 500px;
@@ -31,4 +31,15 @@ body {
 .fruit {
   background: url("./images/grapes.png");
   background-size: cover;
+}
+.author {
+  margin: 0 auto;
+}
+p {
+  display: block;
+  margin: 0 auto;
+}
+h2 {
+  display: flex;
+  justify-content: center;
 }
