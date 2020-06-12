@@ -1,2 +1,2 @@
-# game-snake
+# Snake
 "Snake" - old game for everybody
