@@ -1,2 +1,2 @@
 # game-snake
-"Snake" - game for everybody
+"Snake" - old game for everybody
