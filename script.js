@@ -71,5 +71,52 @@ function createFruit() {
       fruitCoordinates[1] +
       '"]'
   );
+
+  while (fruit.classList.contains("snakeBody")) {
+    let fruitCoordinates = generateFruit();
+    fruit = document.querySelector(
+      '[posX = "' +
+        fruitCoordinates[0] +
+        '"][posY = "' +
+        fruitCoordinates[1] +
+        '"]'
+    );
+  }
+
+  fruit.classList.add("fruit");
 }
 createFruit();
+
+function move() {
+  let snakeCoordinates = [
+    snakeBody[0].getAttribute("posX"),
+    snakeBody[0].getAttribute("posY"),
+  ];
+  snakeBody[0].classList.remove("head");
+  snakeBody[snakeBody.length - 1].classList.remove("snakeBody");
+  snakeBody.pop();
+
+  if (snakeCoordinates[0] < 10) {
+    snakeBody.unshift(
+      document.querySelector(
+        '[posX = "' +
+          (+snakeCoordinates[0] + 1) +
+          '"][posY = "' +
+          snakeCoordinates[1] +
+          '"]'
+      )
+    );
+  } else {
+    snakeBody.unshift(
+      document.querySelector(
+        '[posX = "1"][posY = "' + snakeCoordinates[1] + '"]'
+      )
+    );
+  }
+
+  snakeBody[0].classList.add("head");
+  for (let i = 0; i < snakeBody.length; i++) {
+    snakeBody[i].classList.add("snakeBody");
+  }
+}
+// let interval = setInterval(move, 300)

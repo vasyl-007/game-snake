@@ -28,3 +28,7 @@ body {
   background-size: cover;
   border-radius: 30%;
 }
+.fruit {
+  background: url("./images/grapes.png");
+  background-size: cover;
+}
