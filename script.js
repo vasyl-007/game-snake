@@ -87,6 +87,8 @@ function createFruit() {
 }
 createFruit();
 
+let direction = "right";
+
 function move() {
   let snakeCoordinates = [
     snakeBody[0].getAttribute("posX"),
@@ -120,3 +122,9 @@ function move() {
   }
 }
 // let interval = setInterval(move, 300)
+
+window.addEventListener("keydown", function (e) {
+  if (e.keyCode == 37) {
+    console.log("left");
+  }
+});
